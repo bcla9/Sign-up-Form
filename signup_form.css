@@ -1,11 +1,14 @@
 
 .backgroundBody {
-    background: hsla(3, 100%, 74%, 0.2);
     min-height: 100vh;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
-    background-image: url(./images/bg-intro-desktop.png);
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
 }
@@ -21,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: aliceblue;
+    color: white;
 }
 
 .learn {
@@ -30,7 +33,7 @@ body {
 }
 
 .text-small {
-    font-size: 23px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -38,18 +41,78 @@ body {
     display: flex;
     flex-flow: column wrap;
     background-color: white;
-    border-radius: 0.8rem;
+    border-radius: 0.4rem;
     gap: 2rem;
+    box-shadow: 1px 13px 8px -5px rgba(0,0,0,0.23);
+-webkit-box-shadow: 1px 13px 8px -5px rgba(0,0,0,0.23);
+-moz-box-shadow: 1px 13px 8px -5px rgba(0,0,0,0.23);
 }
 
 .field {
     padding: 1rem;
     display: flex;
     flex-flow: column wrap;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .text {
     width: 100%;
     height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 600;
+    padding-left: 2rem;
+    border-radius: 0.4rem;
+}
+
+input:invalid {
+    border: solid 2px hsl(0, 100%, 74%);
+}
+
+input:valid {
+    border: solid 2px grey;
+}
+
+.try-box {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 0.4rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 13px 8px -5px rgba(0,0,0,0.23);
+-webkit-box-shadow: 1px 13px 8px -5px rgba(0,0,0,0.23);
+-moz-box-shadow: 1px 13px 8px -5px rgba(0,0,0,0.23);
+}
+
+.field button {
+    background-color: hsla(154, 59%, 51%, 0.6);
+    border: 0;
+    color: white;
+    height: 3.5rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    box-shadow: -1px -12px 17px -17px rgba(56,204,14,1) inset;
+-webkit-box-shadow: -1px -12px 17px -17px rgba(56,204,14,1) inset;
+-moz-box-shadow: -1px -12px 17px -17px rgba(56,204,14,1) inset;
+}
+
+.field h2 {
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 01rem;
+}
+
+.field a {
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    font-weight: 600;
 }
