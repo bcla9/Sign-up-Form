@@ -1,18 +1,13 @@
+
 .backgroundBody {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1000000;
-    background: hsla(3, 100%, 74%, 0.7);
+    background: hsla(3, 100%, 74%, 0.2);
+    min-height: 100vh;
 }
 
 body {
     background-image: url(./images/bg-intro-desktop.png);
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
 }
 
 .insieme {
